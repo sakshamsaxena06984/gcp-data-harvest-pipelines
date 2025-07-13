@@ -1,4 +1,5 @@
 # Building a Test-Cricket Statistics Pipeline with Google Cloud Services
+## Overview
 In the world of data engineering, the journey from data retrieval to insightful visualization is an adventure filled with challenges and rewards. In this guide, I'll walk through the intricate steps of constructing a comprehensive cricket statistics pipeline using GCP services. From retrieving data via the Cricbuzz API to crafting a dynamic Looker Studio dashboard, each phase contributes to the seamless flow of data for analysis and visualization.
 
 ### Architecture
@@ -20,3 +21,22 @@ Finally, I can explore the potential of BigQuery as a data source for Looker Stu
 
 ### Orchestration 
 To orchestrate a scalable data pipeline using Cloud Composer, Created an Airflow DAG with two tasks: one for executing a Python script for preprocessing, and another for launching a Dataflow job to handle distributed data transformation.
+
+
+# ETL Project with Data Fusion, Airflow, and BigQuery
+This pipeline contains the Extract, Transform, Load (ETL) project using Google Cloud Data Fusion for data extraction, Apache Airflow/Composer for orchestration, and Google BigQuery for data loading.
+
+## Overview
+
+The project aims to perform the following tasks:
+
+1. **Data Extraction**: Extract data using python.
+2. **Data Masking**: Apply data masking & encoding techniques to sensitive information in Cloud Data Fusion before loading it into BigQuery.
+3. **Data Loading**: Load transformed data into Google BigQuery tables.
+4. **Orchestration**: Automate complete Data pipeline using Airflow ( Cloud Composer )
+
+![image]()
+
+## Architecture
+
+![image]()

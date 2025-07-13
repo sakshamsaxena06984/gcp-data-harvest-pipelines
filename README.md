@@ -5,6 +5,12 @@ In the world of data engineering, the journey from data retrieval to insightful 
 ### Architecture
 ![Architecture](https://github.com/sakshamsaxena06984/gcp-data-harvest-pipelines/blob/main/pipelines-architecture/cricbuzz-pipeline-architecture.png)
 
+1. **Data Extraction**: Extract data using cricbuzz API.
+2. **Data Storage**: Stores the records in csv file formate inside cloude storage bucket.
+3. **Data Loading**: Load transformed data into Google BigQuery tables via dataflow job.
+4. **Orchestration**: Automate complete Data pipeline using Airflow ( Cloud Composer ).
+5. **visualization**: visualize records by the Looker Studio dashboard.
+
 ### Data Retrieval with Python and Cricbuzz API
 The foundation of Test-Cricket-Players-Ranking pipeline begins with Python’s prowess in interfacing with APIs. We’ll delve into the methods of fetching cricket statistics from the Cricbuzz API, harnessing the power of Python to gather the required data efficiently.
 
@@ -13,13 +19,6 @@ Once the data is obtained, our next step involves preserving it securely in the 
 
 ### Dataflow Job for BigQuery
 The core of our pipeline lies in the Dataflow job. Triggered by the Cloud Function, this job orchestrates the transfer of data from the CSV file in GCS to BigQuery. We’ll meticulously configure the job settings to ensure optimal performance and accurate data ingestion into BigQuery.
-
-1. **Data Extraction**: Extract data using cricbuzz API.
-2. **Data Storage**: Stores the records in csv file formate inside cloude storage bucket.
-3. **Data Loading**: Load transformed data into Google BigQuery tables via dataflow job.
-4. **Orchestration**: Automate complete Data pipeline using Airflow ( Cloud Composer ).
-5. **visualization**: visualize records by the Looker Studio dashboard.
-
 
 ### Looker Dashboard Creation
 Finally, I can explore the potential of BigQuery as a data source for Looker Studio. Configuring Looker to connect with BigQuery, we’ll create a visually compelling dashboard. This dashboard will serve as the visualization hub, enabling insightful analysis based on the data loaded from our cricket statistics pipeline.

@@ -16,7 +16,7 @@ The core of our pipeline lies in the Dataflow job. Triggered by the Cloud Functi
 
 ### Looker Dashboard Creation
 Finally, I can explore the potential of BigQuery as a data source for Looker Studio. Configuring Looker to connect with BigQuery, we’ll create a visually compelling dashboard. This dashboard will serve as the visualization hub, enabling insightful analysis based on the data loaded from our cricket statistics pipeline.
-![Looker]()
+![Looker](https://github.com/sakshamsaxena06984/gcp-data-harvest-pipelines/blob/main/visualization-reports/cricbuzz-test-ply-rnks-looker.png)
 
 ### Orchestration 
 To orchestrate a scalable data pipeline using Cloud Composer, Created an Airflow DAG with two tasks: one for executing a Python script for preprocessing, and another for launching a Dataflow job to handle distributed data transformation.

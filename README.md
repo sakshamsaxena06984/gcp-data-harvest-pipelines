@@ -35,7 +35,7 @@ The project aims to perform the following tasks:
 3. **Data Loading**: Load transformed data into Google BigQuery tables.
 4. **Orchestration**: Automate complete Data pipeline using Airflow ( Cloud Composer )
 
-![image]()
+![image](https://github.com/sakshamsaxena06984/gcp-data-harvest-pipelines/blob/main/pipelines-architecture/faker-etl-pipeline-architecture.png)
 
 ## Architecture
 

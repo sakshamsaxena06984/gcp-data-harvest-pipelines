@@ -39,4 +39,4 @@ The project aims to perform the following tasks:
 
 ## Architecture
 
-![image]()
+![image](https://github.com/sakshamsaxena06984/gcp-data-harvest-pipelines/blob/main/visualization-reports/faker-etl-pipeline.png)
